@@ -9,7 +9,7 @@
 
 .menu-hover-lines li a {
   padding: 0.75rem 0;
-  color: rgba(10, 10, 10, 0.5);
+  color: #131d4c;
   position: relative;
   margin-left: 1rem;
 }
@@ -45,7 +45,7 @@
 .menu-hover-lines a:hover,
 .menu-hover-lines li.active > a {
   transition: all 0.35s ease;
-  color: #131d4c;
+  color: #ff6117;
 }
 
 .menu-hover-lines a:hover::before,

@@ -13,13 +13,17 @@
   <!--****************************************************************-->
   <!--                       Menu principal                           -->
   <!-- Accueil, la carte, panier, promos, mon compte                  -->
-  <ul class="menu menu-hover-lines">
-      <li class="active"><a href="#">Accueil</a></li>
-      <li><a href="#">La carte</a></li>
-      <li><a href="#">Panier</a></li>
-      <li><a href="#">promos</a></li>
-      <li><a href="#">Compte</a></li>
-  </ul>
+  <br />
+  <div class="grid-container grid-padding-x">
+   <ul class="menu menu-hover-lines">
+      <li id="accueil" class="active float-center"><a href="#">Accueil</a></li>
+      <li id="carte" class="float-center"><a href="#">Carte</a></li>
+      <li id="panier" class="float-center"><a href="#">Panier</a></li>
+      <li id="promos" class="float-center"><a href="#">promos</a></li>
+      <li id="compte" class="float-center"><a href="#">Compte</a></li>
+   </ul>
+  </div>
+  <br />
   <!--****************************************************************-->
   <div class="full-screen"> </div>
   
@@ -110,5 +114,34 @@
     <script src="js/what-input.js"></script>
     <script src="js/foundation.js"></script>
     <script src="js/app.js"></script>
+    
+    <script>
+     $( "#accueil" ).click(function()
+     {
+         if ($('#accueil').hasClass('active'))
+        { alert("L'accueil est déjà actif.");} else { alert("L'accueil n'est pas actif.");};
+     });
+     $( "#carte" ).click(function()
+     {
+         if ($('#carte').hasClass('active'))
+        { alert("La carte est déjà actif.");} else { alert("La carte n'est pas actif.");};
+     });
+     $( "#panier" ).click(function()
+     {
+         if ($('#panier').hasClass('active'))
+        { alert("Le panier est déjà actif.");} else { alert("Le panier n'est pas actif.");};
+     });
+     $( "#promos" ).click(function()
+     {
+         if ($('#promos').hasClass('active'))
+        { alert("Les promos sont déjà actifs.");} else { alert("Les promos ne sont pas actifs.");};
+     });
+     $( "#compte" ).click(function()
+     {
+         if ($('#compte').hasClass('active'))
+        { alert("Le compte est déjà actif.");} else { alert("Le compte n'est pas actif.");};
+     });
+  </script>
+    
   </body>
 </html>
