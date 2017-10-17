@@ -1,0 +1,33 @@
+Cahier des charges
+
+L'objectif est de réaliser un site internet permettant à des personnes :
+
+- Page d'acceuil (Qui sommes nous, ou sommes nous, promos,...)
+	Top-header: accueil, carte, panier, promos, mon compte)
+	Footer : copyright, qui sommes nous, ou nous joindre, nous suivre sur les réseaux, salades, pizza ,pâtes)
+
+- consulter la carte des plats (plats + prix + description);
+	- afficher une image d'un plat, le nom du plat, afficher le prix, afficher la description);
+	- menu d'accès aux plats;
+	- lien vers le panier avec un compteur;
+
+- commander un plat (ajout au panier, valider la commande, payer);
+	- ajouter le plats selectionné au panier;
+	- supprimer le plat du panier (optio) ;
+	- visualiser la liste des plats + afficher le montant total H.T + la TVA, montant TTC;
+
+- livraison (sur place ou à emporter, adresse de livraison, temps d'attente);
+	- choisir si on souhaite aller chercher le plat sur place ou livré (contrainte 20 € min)
+
+
+
+
+
+
+
+
+
+													images:pixabay.com
+													icons:flaticon.com
+													(couleur png 128)
+													(monochrome svg #131d4c)

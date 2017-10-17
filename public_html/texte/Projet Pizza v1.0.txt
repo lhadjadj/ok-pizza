@@ -1,0 +1,75 @@
+﻿font* = Polices de caractère
+- font-size: 	taille de la police --> exemple font-size:2rem;
+- font-family:  choix de la police  --> exemple font-family: "arial";
+- font-weight:  épaisseur de la policeexemple font-weight: 100 à 900
+
+color* = couleur
+- color:        couleur de la poice --> exemple color: red ou color: #EE0D0D;
+palette graphique :http://www.color-hex.com/
+
+background* = options de fond
+- background-color: Défini la couleur d'arrière plan --> exemple background-color: green;
+- background-border: Défini  la couleur de la bordure --> exemple background-border : solid 1px black;
+
+padding*
+- padding:  	 Défini l'espacement entre l'élément et la page --> exemple padding: 1rem 1rem 1rem 1rem;
+- padding-top    Espace en haut --> padding-top: 1rem;
+- padding-bottom esapce en bas
+- padding-left   Espace à gauche
+- padding-right  Espace à droite
+
+margin*
+- margin:  	 Défini une marge en haut, en bas, a gauche --> exemple padding: 1rem 1rem 1rem 1rem;
+- margin-top     Marge en haut d'un 1rem = espace d'un caractère --> margin- top: 1rem;
+- margin-bottom  Marge en bas
+- margin-left    Marge à gauche
+- margin-right   Marge à droite
+
+Float*		 Poistionnement d'ujn bloc à gauche ou a droite
+float: 		 Permet d'alligner à gauche ou droite --> float:left; float:right;
+
+hyphens*	 Gestion de la césure d'un mot (none, manuel, auto)
+
+-webkit-hyphens: auto; 	--> Chrome, safari,...
+-ms-hyphens: auto;  	--> Ms Internet explorer
+hyphens: auto;  	--> firefox
+
+::			Applique une action sur l'élement avant ou après
+::after			exemple : #ajoute_merci::after {content=" merci"}
+::before
+
+:			Aplique une action pendant le survol de l'objet ou lors de la selection	
+:hover
+:focus  
+
+
+<link rel="stylesheet" type="text/css" href="theme.css">
+
+<script src="app.js"></script>
+
+https://mespotesgeek.fr/fr/debian-8-jessie-securisation/
+
+
+Cahier des charges.
+
+L'objectif est de réaliser un site internet permettant à des personnes :
+    - commander des pizza ou des sushi ou autre chose ;
+    - de se les faire livrer à la maison ;
+
+- Page d'accueil (Qui sommes nous, ou sommes nous, promos, nous suivre sur les réseaux, ...) 
+	Top-header : Accueil, la carte, panier, promos, mon compte
+	footer : copyright, qui sommes nous, ou nous joindre, nous suivre sur les réseaux, salades, pizzas, pattes,..)
+
+- consulter la carte des plats (plats + prix + description);
+	- afficher une image d'un plat, afficher le nom plat, afficher le prix, afficher la description)
+	- menu d'accès aux plats ;
+	- lien vers le panier avec un compteur ;
+
+- commander un plat (ajout au panier, valider la commande, payer);	
+	- ajouter le plat séctionné au panier ;
+	- supprimer le plat du panier (option) ;
+	- visualiser la liste des plats + afficher le montant total H.T + la TVA, montant T.T.C
+	
+
+- livraison (sur place ou a emporter, adresse de livraion, temps d'attente) ;
+	- choisir si on souhaite aller chercher le plat sur place ou livré (contrainte 20 € min)
