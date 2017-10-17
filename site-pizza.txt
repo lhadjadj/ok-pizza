@@ -1,6 +1,6 @@
 Cahier des charges
 
-L'objectif est de réaliser un site internet permettant à des personnes :
+L'objectif est de réaliser un site internet permettant à des personnes de :
 
 - Page d'acceuil (Qui sommes nous, ou sommes nous, promos,...)
 	Top-header: accueil, carte, panier, promos, mon compte)
@@ -19,15 +19,4 @@ L'objectif est de réaliser un site internet permettant à des personnes :
 - livraison (sur place ou à emporter, adresse de livraison, temps d'attente);
 	- choisir si on souhaite aller chercher le plat sur place ou livré (contrainte 20 € min)
 
-
-
-
-
-
-
-
-
-													images:pixabay.com
-													icons:flaticon.com
-													(couleur png 128)
-													(monochrome svg #131d4c)
+(monochrome svg #131d4c)

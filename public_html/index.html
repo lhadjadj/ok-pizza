@@ -16,27 +16,78 @@
   <br />
   <div class="grid-container grid-padding-x">
    <ul class="menu menu-hover-lines">
-      <li id="accueil" 
-          class="active float-center show-for-medium">
+      <li id="mediumAccueil" 
+          class="active show-for-medium">
           <a href="#">Accueil</a>
       </li>
       
-      <li id="accueil" 
-          class="active float-center show-for-small-only">
+      <li id="smallAccueil" 
+          class="float-center show-for-small-only">
           <a href="#">
-              <object 
-                    type="image/svg+xml" 
+              <object type="image/svg+xml" 
                     data="images/icones/accueil.svg" 
-                    width="50" height="25">
+                    width="80" height="40"
+                    style="margin-left:-2rem;">
               </object>
           </a>
       </li>
       
       
-      <li id="carte" class="float-center"><a href="#">Carte</a></li>
-      <li id="panier" class="float-center"><a href="#">Panier</a></li>
-      <li id="promos" class="float-center"><a href="#">promos</a></li>
-      <li id="compte" class="float-center"><a href="#">Compte</a></li>
+      <li id="mediumCarte" 
+          class="float-center show-for-medium">
+          <a href="carte.html">Carte</a>
+      </li>
+      <li id="smallCarte" 
+          class="float-center show-for-small-only">
+          <a href="carte.html">
+           <object type="image/svg+xml" 
+                   data="images/icones/carte.svg" 
+                   width="80" height="40"
+                   style="margin-left:-2rem;">
+          </object>
+          </a>
+      </li>
+    
+      
+      <li id="mediumPanier" class="float-center show-for-medium">
+          <a href="#">Panier</a>
+      </li>
+      <li id="smallPanier" class="float-center show-for-small-only">
+          <a href="#">
+           <object type="image/svg+xml" 
+                   data="images/icones/panier.svg" 
+                   width="80" height="40"
+                   style="margin-left:-2rem;">
+          </object>
+          </a>
+      </li>
+      
+      <li id="mediumPromos" class="float-center show-for-medium">
+          <a href="#">promos</a>
+      </li>
+      <li id="smallPromos" class="float-center show-for-small-only">
+          <a href="#">
+           <object type="image/svg+xml" 
+                   data="images/icones/promos.svg" 
+                   width="80" height="40"
+                   style="margin-left:-2rem;">
+          </object>
+          </a>
+      </li>
+
+      <li id="mediumCompte" class="float-center show-for-medium">
+          <a href="#">Compte</a>
+      </li>
+      <li id="smallCompte" class="float-center show-for-small-only">
+          <a href="#">
+           <object type="image/svg+xml" 
+                   data="images/icones/compte.svg" 
+                   width="80" height="40"
+                   style="margin-left:-2rem;">
+          </object>
+          </a>
+      </li>
+      
    </ul>
   </div>
   <br />
@@ -132,73 +183,73 @@
     <script src="js/app.js"></script>
     
     <script>
-     $( "#accueil" ).click(function()
+     $( "#mediumAccueil" ).click(function()
      {
-       if ($('#accueil').hasClass('active'))
+       if ($('#mediumAccueil').hasClass('active'))
             { return ;} // je sors du test
             else 
             { 
-             $('#accueil').addClass('active');
-             $('#carte').removeClass('active');
-             $('#panier').removeClass('active');
-             $('#promos').removeClass('active');
-             $('#compte').removeClass('active');
+             $('#mediumAccueil').addClass('active');
+             $('#mediumCarte').removeClass('active');
+             $('#mediumPanier').removeClass('active');
+             $('#mediumPromos').removeClass('active');
+             $('#mediumCompte').removeClass('active');
             };
      });
      
     
-     $( "#carte" ).click(function()
+     $( "#mediumCarte" ).click(function()
      {
-         if ($('#carte').hasClass('active'))
+         if ($('#mediumCarte').hasClass('active'))
         { return;} 
             else 
             { 
-             $('#carte').addClass('active');
-             $('#accueil').removeClass('active');
-             $('#panier').removeClass('active');
-             $('#promos').removeClass('active');
-             $('#compte').removeClass('active');
+             $('#mediumCarte').addClass('active');
+             $('#mediumAccueil').removeClass('active');
+             $('#mediumPanier').removeClass('active');
+             $('#mediumPromos').removeClass('active');
+             $('#mediumCompte').removeClass('active');
         };
      });
      
-     $( "#panier" ).click(function()
+     $( "#mediumPanier" ).click(function()
      {
-         if ($('#panier').hasClass('active'))
+         if ($('#mediumPanier').hasClass('active'))
             { return;} 
             else 
             { 
-             $('#panier').addClass('active');
-             $('#carte').removeClass('active');
-             $('#accueil').removeClass('active');
-             $('#promos').removeClass('active');
-             $('#compte').removeClass('active');
+             $('#mediumPanier').addClass('active');
+             $('#mediumCarte').removeClass('active');
+             $('#mediumAccueil').removeClass('active');
+             $('#mediumPromos').removeClass('active');
+             $('#mediumCompte').removeClass('active');
              
             };
      });
-     $( "#promos" ).click(function()
+     $( "#mediumPromos" ).click(function()
      {
-         if ($('#promos').hasClass('active'))
+         if ($('#meidumPromos').hasClass('active'))
             { return;} 
             else 
             { 
-             $('#promos').addClass('active');
-             $('#carte').removeClass('active');
-             $('#panier').removeClass('active');
-             $('#accueil').removeClass('active');
-             $('#compte').removeClass('active');
+             $('#mediumPromos').addClass('active');
+             $('#mediumCarte').removeClass('active');
+             $('#mediumPanier').removeClass('active');
+             $('#mediumAccueil').removeClass('active');
+             $('#mediumCompte').removeClass('active');
             };
      });
-     $( "#compte" ).click(function()
+     $( "#mediumCompte" ).click(function()
      {
-       if ($('#compte').hasClass('active'))
+       if ($('#mediumCompte').hasClass('active'))
         { return;} 
         else 
         { 
-          $('#compte').addClass('active');
-          $('#carte').removeClass('active');
-          $('#panier').removeClass('active');
-          $('#promos').removeClass('active');
-          $('#accueil').removeClass('active');
+          $('#mediumCompte').addClass('active');
+          $('#mediumCarte').removeClass('active');
+          $('#mediumPanier').removeClass('active');
+          $('#mediumPromos').removeClass('active');
+          $('#mediumAccueil').removeClass('active');
         };
      });
   </script>
