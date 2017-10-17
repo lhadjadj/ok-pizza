@@ -118,28 +118,72 @@
     <script>
      $( "#accueil" ).click(function()
      {
-         if ($('#accueil').hasClass('active'))
-        { alert("L'accueil est déjà actif.");} else { alert("L'accueil n'est pas actif.");};
+       if ($('#accueil').hasClass('active'))
+            { return ;} // je sors du test
+            else 
+            { 
+             $('#accueil').addClass('active');
+             $('#carte').removeClass('active');
+             $('#panier').removeClass('active');
+             $('#promos').removeClass('active');
+             $('#compte').removeClass('active');
+            };
      });
+     
+    
      $( "#carte" ).click(function()
      {
          if ($('#carte').hasClass('active'))
-        { alert("La carte est déjà actif.");} else { alert("La carte n'est pas actif.");};
+        { return;} 
+            else 
+            { 
+             $('#carte').addClass('active');
+             $('#accueil').removeClass('active');
+             $('#panier').removeClass('active');
+             $('#promos').removeClass('active');
+             $('#compte').removeClass('active');
+        };
      });
+     
      $( "#panier" ).click(function()
      {
          if ($('#panier').hasClass('active'))
-        { alert("Le panier est déjà actif.");} else { alert("Le panier n'est pas actif.");};
+            { return;} 
+            else 
+            { 
+             $('#panier').addClass('active');
+             $('#carte').removeClass('active');
+             $('#accueil').removeClass('active');
+             $('#promos').removeClass('active');
+             $('#compte').removeClass('active');
+             
+            };
      });
      $( "#promos" ).click(function()
      {
          if ($('#promos').hasClass('active'))
-        { alert("Les promos sont déjà actifs.");} else { alert("Les promos ne sont pas actifs.");};
+            { return;} 
+            else 
+            { 
+             $('#promos').addClass('active');
+             $('#carte').removeClass('active');
+             $('#panier').removeClass('active');
+             $('#accueil').removeClass('active');
+             $('#compte').removeClass('active');
+            };
      });
      $( "#compte" ).click(function()
      {
-         if ($('#compte').hasClass('active'))
-        { alert("Le compte est déjà actif.");} else { alert("Le compte n'est pas actif.");};
+       if ($('#compte').hasClass('active'))
+        { return;} 
+        else 
+        { 
+          $('#compte').addClass('active');
+          $('#carte').removeClass('active');
+          $('#panier').removeClass('active');
+          $('#promos').removeClass('active');
+          $('#accueil').removeClass('active');
+        };
      });
   </script>
     
